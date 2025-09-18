@@ -1,0 +1,30 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	files
+#open	2025-09-18-13-05-35
+#fields	ts	fuid	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	source	depth	analyzers	mime_type	filename	duration	local_orig	is_orig	seen_bytes	total_bytes	missing_bytes	overflow_bytes	timedout	parent_fuid	md5	sha1	sha256	extracted	extracted_cutoff	extracted_size
+#types	time	string	string	addr	port	addr	port	string	count	set[string]	string	string	interval	bool	bool	count	count	count	count	bool	string	string	string	string	string	bool	count
+1722307129.562698	F3I99i1PtIFlhGB3rl	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	SMB	0	(empty)	text/ini	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\gpt.ini	0.000000	T	F	22	22	0	0	F	-	-	-	-	-	-	-
+1722307129.578812	FENnMu2fndJ8ZUudYd	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	SMB	0	(empty)	text/ini	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Microsoft\\Windows NT\\SecEdit\\GptTmpl.inf	0.000000	T	F	1098	1098	0	0	F	-	-	-	-	-	-	-
+1722307129.584182	F3B3eG3zyPHiJUC8ha	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	SMB	0	(empty)	application/vnd.ms-pol	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Registry.pol	0.000000	T	F	2806	2806	0	0	F	-	-	-	-	-	-	-
+1722307129.589787	F3I99i1PtIFlhGB3rl	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	SMB	0	(empty)	text/ini	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\gpt.ini	0.000000	T	F	22	22	0	0	F	-	-	-	-	-	-	-
+1722307129.686046	FbBtHc4DJvYjRTHKi	CXZktC1AtNeytlc0X1	172.16.1.66	49697	23.215.55.140	80	HTTP	0	(empty)	text/plain	-	0.000000	F	F	22	22	0	0	F	-	-	-	-	-	-	-
+1722307155.254448	FtBrUL3KjJyjPbQ5V8	CdGhlp2Wf0rYcA1sjd	172.16.1.66	49733	20.96.153.111	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307157.978011	FEdUN21abWxvhc7rKf	CRxwvq3m9usenpfz26	172.16.1.66	49735	52.109.6.53	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307158.798820	Fsp8A4b3TrChH5Kh7	CH5CV5M7zBvnfQo44	172.16.1.66	49737	52.109.0.142	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307163.471599	FjvyNW1sVgSoHMFhm8	CS2TMK2vzVEHcMRdXj	172.16.1.66	49738	52.109.0.142	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307163.547418	F7RGOfAJ7v7njmqxc	CLHPdA2MtdSgkWpE9f	172.16.1.66	49739	20.241.44.114	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307164.028863	FsarUE3oFyQH9z300i	CSeLnUY25LKzrUhWh	172.16.1.66	49740	23.52.9.140	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307207.011053	FdlG6pwAk9IIWc546	CRiD141rJGe0Szhkmf	172.16.1.66	49755	208.95.112.1	80	HTTP	0	(empty)	text/json	-	0.000000	F	F	294	294	0	0	F	-	-	-	-	-	-	-
+1722307332.318443	FZSgFf1gXfFWoaYf97	CBLeLB4wzmdtrgDd3h	172.16.1.66	49792	52.109.0.91	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307332.790361	F0lg5n2clz4SQ860cd	CgzBL22rnhG1RaSuzj	172.16.1.66	49793	52.113.194.132	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307332.802207	FX0fTy4Ziol5hWGt6l	C74RuI10dGEm46juHe	172.16.1.66	49795	52.109.20.47	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307332.802288	FsNbYM2gtcdKnJw8C5	C2y0kX2ff0nn0tVfTf	172.16.1.66	49797	52.109.20.47	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307332.802337	Fuip0n4qfp4EXcVkF9	CCi8hl45bPYqOEuE4d	172.16.1.66	49794	52.109.20.47	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307332.802422	FzI60832bgXt013Kb7	CqPhQdbRbBUmkgZ9h	172.16.1.66	49796	52.109.20.47	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	1782	-	0	0	F	-	-	-	-	-	-	-
+1722307333.383369	FCt56J2rvXMdt7AtV4	ChxmOX1hQRVOYKuhsd	172.16.1.66	49798	40.97.199.114	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	471	-	0	0	F	-	-	-	-	-	-	-
+1722307345.640468	FPikSY3rOlbAkpQ1Wa	CbFNTA3GrrW9npZspg	172.16.1.66	49802	23.221.22.68	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	972	-	0	0	F	-	-	-	-	-	-	-
+1722307469.582859	FwX9H2P4ySsBUtJw5	CG5t661RHOWsBnWkJi	172.16.1.66	49820	23.194.164.136	443	SSL	0	OCSP_REPLY	application/ocsp-response	-	0.000000	F	F	471	-	0	0	F	-	-	-	-	-	-	-
+#close	2025-09-18-13-05-36

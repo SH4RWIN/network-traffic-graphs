@@ -1,0 +1,15 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ntlm
+#open	2025-09-18-13-05-35
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	username	hostname	domainname	server_nb_computer_name	server_dns_computer_name	server_tree_name	success
+#types	time	string	addr	port	addr	port	string	string	string	string	string	string	bool
+1722307129.431659	CGUgJl1z2rIzHzKpfa	172.16.1.66	49692	172.16.1.4	445	DESKTOP-SKBR25F$	DESKTOP-SKBR25F	WIRESHARKWORKSH	WIRESHARK-WS-DC	WIRESHARK-WS-DC.wiresharkworkshop.online	-	T
+1722307270.496127	CNa3gF4NhBS4huwc45	172.16.1.66	49788	172.16.1.4	139	-	DESKTOP-SKBR25F	-	WIRESHARK-WS-DC	WIRESHARK-WS-DC.wiresharkworkshop.online	wiresharkworkshop.online	T
+1722307300.508595	CUVJVaera5JediLDf	172.16.1.66	49789	172.16.1.4	139	-	DESKTOP-SKBR25F	-	WIRESHARK-WS-DC	WIRESHARK-WS-DC.wiresharkworkshop.online	wiresharkworkshop.online	T
+1722307330.538622	CBIeDE14bTxogIQDQl	172.16.1.66	49790	172.16.1.4	139	-	DESKTOP-SKBR25F	-	WIRESHARK-WS-DC	WIRESHARK-WS-DC.wiresharkworkshop.online	wiresharkworkshop.online	T
+1722307360.556360	CosNvM2dhzogXidBT1	172.16.1.66	49804	172.16.1.4	139	-	DESKTOP-SKBR25F	-	WIRESHARK-WS-DC	WIRESHARK-WS-DC.wiresharkworkshop.online	wiresharkworkshop.online	T
+1722307390.586889	C2mVc030j1gUHFi9m9	172.16.1.66	49805	172.16.1.4	139	-	DESKTOP-SKBR25F	-	WIRESHARK-WS-DC	WIRESHARK-WS-DC.wiresharkworkshop.online	wiresharkworkshop.online	T
+#close	2025-09-18-13-05-36

@@ -1,0 +1,17 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	smb_files
+#open	2025-09-18-13-05-35
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	fuid	action	path	name	size	prev_name	times.modified	times.accessed	times.created	times.changed
+#types	time	string	addr	port	addr	port	string	enum	string	string	count	string	time	time	time	time
+1722307129.561113	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	-	SMB::FILE_OPEN	\\\\WIRESHARK-WS-DC.wiresharkworkshop.online\\sysvol	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\gpt.ini	22	-	1721767794.942812	1721767794.942812	1721766695.187656	1721767794.942812
+1722307129.566759	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	-	SMB::FILE_OPEN	\\\\WIRESHARK-WS-DC.wiresharkworkshop.online\\sysvol	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine	0	-	1721767794.942812	1721767794.942812	1721766695.187656	1721767794.942812
+1722307129.568437	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	-	SMB::FILE_OPEN	\\\\WIRESHARK-WS-DC.wiresharkworkshop.online\\sysvol	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Microsoft	0	-	1721766695.187656	1721766695.187656	1721766695.187656	1721766700.621590
+1722307129.570041	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	-	SMB::FILE_OPEN	\\\\WIRESHARK-WS-DC.wiresharkworkshop.online\\sysvol	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Microsoft\\Windows NT	0	-	1721766695.187656	1721766695.187656	1721766695.187656	1721766700.621590
+1722307129.571797	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	-	SMB::FILE_OPEN	\\\\WIRESHARK-WS-DC.wiresharkworkshop.online\\sysvol	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Microsoft\\Windows NT\\SecEdit	0	-	1721766695.191559	1721766695.191559	1721766695.187656	1721766700.621590
+1722307129.573112	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	-	SMB::FILE_OPEN	\\\\WIRESHARK-WS-DC.wiresharkworkshop.online\\sysvol	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Microsoft\\Windows NT\\SecEdit\\GptTmpl.inf	1098	-	1721766695.191559	1721766695.191559	1721766695.191559	1721766700.621590
+1722307129.579711	CsCzUk7aUmd7V2Gs8	172.16.1.66	49694	172.16.1.4	445	-	SMB::FILE_OPEN	\\\\WIRESHARK-WS-DC.wiresharkworkshop.online\\sysvol	wiresharkworkshop.online\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\Machine\\Registry.pol	2806	-	1721767794.927147	1721767794.927147	1721767794.927147	1721767794.942812
+1722307183.080608	CQHVjW2TFpARzQXO3	172.16.1.66	49728	172.16.1.4	445	-	SMB::FILE_OPEN	\\\\WIRESHARK-WS-DC\\Shared_Access	<share_root>	4096	-	1721787757.060862	1721787757.060862	1721770584.052721	1721787757.060862
+#close	2025-09-18-13-05-36

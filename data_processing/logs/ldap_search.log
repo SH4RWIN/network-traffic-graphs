@@ -1,0 +1,56 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ldap_search
+#open	2025-09-18-13-05-35
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	message_id	scope	deref_aliases	base_object	result_count	result	diagnostic_message	filter	attributes
+#types	time	string	addr	port	addr	port	int	string	string	string	count	string	string	string	vector[string]
+1722307128.986163	C2LVXZ1wP4ckeKrVm8	172.16.1.66	57775	172.16.1.4	389	1	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x20000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307128.986963	C2LVXZ1wP4ckeKrVm8	172.16.1.66	57775	172.16.1.4	389	2	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x20000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307128.987188	C2LVXZ1wP4ckeKrVm8	172.16.1.66	57775	172.16.1.4	389	4	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x20000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307128.987130	C2LVXZ1wP4ckeKrVm8	172.16.1.66	57775	172.16.1.4	389	3	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x20000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307129.101159	C2LVXZ1wP4ckeKrVm8	172.16.1.66	57775	172.16.1.4	389	5	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x20000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307129.102370	C3yFqj1somBVDDfWP1	172.16.1.66	49673	172.16.1.4	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1722307129.102956	CTyAp5FqU8EBegtye	172.16.1.66	49674	172.16.1.4	389	2	base	never	-	1	success	-	(objectclass=*)	-
+1722307129.259995	CeqrAT2mTwHHS0bBxe	172.16.1.66	49688	172.16.1.4	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1722307129.278247	CeqrAT2mTwHHS0bBxe	172.16.1.66	49688	172.16.1.4	389	4	tree	never	DC=wiresharkworkshop,DC=online	1	success	-	(|(distinguishedName=DC=wiresharkworkshop,DC=online))	-
+1722307129.280897	CW5mlG4Y8iHmBTxxs8	172.16.1.66	49846	172.16.1.4	389	6	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x20000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307129.398906	C86LWF1oxJ81Vjtqc	172.16.1.66	49691	172.16.1.4	389	8	base	never	-	1	success	-	(objectClass=*)	-
+1722307129.399594	C86LWF1oxJ81Vjtqc	172.16.1.66	49691	172.16.1.4	389	9	base	never	CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=wiresharkworkshop,DC=online	1	success	-	(objectClass=*)	-
+1722307129.400886	CeqrAT2mTwHHS0bBxe	172.16.1.66	49688	172.16.1.4	389	10	tree	never	cn=policies,cn=system,DC=wiresharkworkshop,DC=online	1	success	-	(&(&(!(flags:1.2.840.113556.1.4.803:=2))(gPCMachineExtensionNames=[*]))(|(distinguishedName=CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=wiresharkworkshop,DC=online)))	-
+1722307129.439539	CrLSyk3BougR3A8hjd	172.16.1.66	49847	172.16.1.4	389	7	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x00000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307129.952978	CRskjs1GCEpInRABM4	172.16.1.66	49698	172.16.1.4	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1722307129.964882	CRskjs1GCEpInRABM4	172.16.1.66	49698	172.16.1.4	389	4	base	never	-	1	success	-	(objectCategory=*)	-
+1722307129.965424	CRskjs1GCEpInRABM4	172.16.1.66	49698	172.16.1.4	389	5	base	never	-	1	success	-	(objectCategory=*)	-
+1722307129.965834	CRskjs1GCEpInRABM4	172.16.1.66	49698	172.16.1.4	389	6	base	never	CN=NTDS Settings,CN=WIRESHARK-WS-DC,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=wiresharkworkshop,DC=online	1	success	-	(objectCategory=*)	-
+1722307129.966338	CRskjs1GCEpInRABM4	172.16.1.66	49698	172.16.1.4	389	7	tree	never	CN=Public Key Services,CN=Services,CN=Configuration,DC=wiresharkworkshop,DC=online	0	success	-	(objectCategory=certificationAuthority)	-
+1722307129.968377	CRskjs1GCEpInRABM4	172.16.1.66	49698	172.16.1.4	389	8	single	never	CN=Certification Authorities,CN=Public Key Services,CN=Services,CN=Configuration,DC=wiresharkworkshop,DC=online	0	success	-	(objectCategory=certificationAuthority)	-
+1722307129.969209	CRskjs1GCEpInRABM4	172.16.1.66	49698	172.16.1.4	389	9	single	never	CN=Public Key Services,CN=Services,CN=Configuration,DC=wiresharkworkshop,DC=online	0	success	-	(cn=NTAuthCertificates)	-
+1722307129.971370	CRskjs1GCEpInRABM4	172.16.1.66	49698	172.16.1.4	389	10	single	never	CN=AIA,CN=Public Key Services,CN=Services,CN=Configuration,DC=wiresharkworkshop,DC=online	0	success	-	(objectCategory=certificationAuthority)	-
+1722307129.973223	CRskjs1GCEpInRABM4	172.16.1.66	49698	172.16.1.4	389	11	single	never	CN=OID,CN=Public Key Services,CN=Services,CN=Configuration,DC=wiresharkworkshop,DC=online	0	success	-	(ObjectClass=*)	-
+1722307129.997732	C7wZi82cOSWJ8Gfpd7	172.16.1.66	49699	172.16.1.4	389	15	base	never	-	1	success	-	(objectClass=*)	-
+1722307130.011426	C8Q0MUfzpdrnT0Wrg	172.16.1.66	49701	172.16.1.4	389	25	base	never	-	1	success	-	(objectClass=*)	-
+1722307130.016918	C8Q0MUfzpdrnT0Wrg	172.16.1.66	49701	172.16.1.4	389	26	tree	never	CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=wiresharkworkshop,DC=online	0	success	-	(objectCategory=pKICertificateTemplate)	-
+1722307133.084227	Cm68jt4F58CHDDdTr7	172.16.1.66	60778	172.16.1.4	389	8	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x00000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307133.192409	Cac9iQ2Mjd0jKQHZG4	172.16.1.66	60779	172.16.1.4	389	9	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x20000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307152.539701	CS9ZfI3fSEZN1Ibav5	172.16.1.66	50706	172.16.1.4	389	10	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x20000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307152.779506	CVSZRK2mxgm9L5Tg3f	172.16.1.66	49724	172.16.1.4	389	16	tree	never	DC=wiresharkworkshop,DC=online	1	success	-	(|(distinguishedName=DC=wiresharkworkshop,DC=online))	-
+1722307152.785220	CEa1ap4b8WroLIYwvg	172.16.1.66	49726	172.16.1.4	389	20	base	never	-	1	success	-	(objectClass=*)	-
+1722307152.785699	CEa1ap4b8WroLIYwvg	172.16.1.66	49726	172.16.1.4	389	21	base	never	CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=wiresharkworkshop,DC=online	1	success	-	(objectClass=*)	-
+1722307152.786258	CVSZRK2mxgm9L5Tg3f	172.16.1.66	49724	172.16.1.4	389	22	tree	never	cn=policies,cn=system,DC=wiresharkworkshop,DC=online	0	success	-	(&(&(!(flags:1.2.840.113556.1.4.803:=1))(gPCUserExtensionNames=[*]))(|(distinguishedName=CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=wiresharkworkshop,DC=online)))	-
+1722307213.794832	CSgzV43UH0U2wDDUUj	172.16.1.66	62464	172.16.1.4	389	11	base	never	-	1	success	-	(&(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(DomainGuid=95f725ab-871a-4b18-8370-debe6f9412fa))(NtVer=0x00000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307213.933779	C3mPohNh8qj7A2Emh	172.16.1.66	49765	172.16.1.4	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1722307214.130677	C1cEDKh7Y5cd8dJP2	172.16.1.66	49769	172.16.1.4	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1722307239.020504	CrrnS9LeqPG91FeKb	172.16.1.66	49780	172.16.1.4	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1722307241.103539	CR3dil2nuU5m8dtKud	172.16.1.66	49783	172.16.1.4	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1722307241.110307	CR3dil2nuU5m8dtKud	172.16.1.66	49783	172.16.1.4	389	4	base	never	CN=Clark Collier,CN=Users,DC=wiresharkworkshop,DC=online	1	success	-	(objectClass=user)	-
+1722307241.123191	CcifbC3AxD2487lECb	172.16.1.66	49785	172.16.1.4	389	9	base	never	CN=Clark Collier,CN=Users,DC=wiresharkworkshop,DC=online	1	success	-	(objectClass=user)	-
+1722307332.007314	C2Il2I2lCKJ56S4ofd	172.16.1.66	49791	172.16.1.4	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1722307333.585569	CbpAUh2PCNbtCb12Oc	172.16.1.66	59906	172.16.1.4	389	12	base	never	-	1	success	-	(&(&(&(DnsDomain=wiresharkworkshop.online.)(Host=DESKTOP-SKBR25F))(NtVer=0xa0000016))(DnsHostName=DESKTOP-SKBR25F.wiresharkworkshop.online))	-
+1722307333.689571	CCNUIB1SxWDrTY5kC1	172.16.1.66	49800	172.16.1.4	3268	7	base	never	-	1	success	-	(objectclass=*)	-
+1722307333.692019	CCNUIB1SxWDrTY5kC1	172.16.1.66	49800	172.16.1.4	3268	10	tree	never	-	1	success	-	(&(&(objectClass=user)(objectCategory=person))(objectSid=01:05:00:00:00:00:00:05:15:00:00:00:20:c6:57:32:21:02:32:6a:2c:b6:15:1e:55:04:00:00))	-
+1722307456.676444	CbxB5v33gXgicTdxXi	172.16.1.66	49811	172.16.1.4	389	1	base	never	-	1	success	-	(objectclass=*)	-
+1722307456.680260	CbxB5v33gXgicTdxXi	172.16.1.66	49811	172.16.1.4	389	4	base	never	CN=Clark Collier,CN=Users,DC=wiresharkworkshop,DC=online	1	success	-	(objectClass=user)	-
+1722307456.690871	CKYCBU1M8JXNa3IMPb	172.16.1.66	49812	172.16.1.4	389	9	base	never	CN=Clark Collier,CN=Users,DC=wiresharkworkshop,DC=online	1	success	-	(objectClass=user)	-
+#close	2025-09-18-13-05-36

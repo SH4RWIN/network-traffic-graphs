@@ -1,0 +1,4 @@
+"ts","uid","id_orig_h","id_orig_p","id_resp_h","id_resp_p","name","addl","notice","peer","source"
+"1722307133.975534","CXVUtw00JnBi9R2Nh","172.16.1.66","60777","172.16.1.4","53","DNS_unknown_opcode","5","F","zeek"
+"1722307152.767050","CRLez84Csdxrw2Iil9","172.16.1.66","49723","172.16.1.4","49695","netlogon_dce_rpc_auth_type","68","F","zeek"
+"1722307237.777858","Cbved3Szp46jAoHE5","172.16.1.66","49777","172.16.1.4","49667","netlogon_dce_rpc_auth_type","68","F","zeek"

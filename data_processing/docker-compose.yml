@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  zeek:
+    # Use the official Zeek Long-Term Support image
+    image: zeek/zeek:lts
+    
+    # Define a working directory inside the container for log output
+    working_dir: /zeek-logs
+    
+    # Mount local directories into the container
+    volumes:
+      # Mounts the local ./pcap directory as /pcap inside the container (read-only)
+      - ./pcap:/pcap:ro
+      
+      # Mounts the local ./logs directory as /zeek-logs inside the container (read-write)
+      - ./logs:/zeek-logs:rw
+    
+    # Run Zeek over the provided PCAP and write logs to /zeek-logs
+    entrypoint: ["zeek"]
+    command: ["-Cr", "/pcap/file.pcap"]
