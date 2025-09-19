@@ -5,7 +5,10 @@ from pie_chart import load_and_standardize_log
 
 
 def plot_connections_over_time(df: pd.DataFrame, freq: str = "30S", out_path: Path | None = None) -> None:
-	"""Plot count of connections (events) over time at the given interval."""
+	"""
+	Plot count of connections (events) over time at the given interval.
+	"""
+
 	# Ensure datetime is valid and present
 	df = df.copy()
 	df["datetime"] = pd.to_datetime(df["datetime"], errors="coerce")
@@ -38,7 +41,6 @@ def plot_connections_over_time(df: pd.DataFrame, freq: str = "30S", out_path: Pa
 		plt.savefig(out_path, dpi=150)
 	plt.show()
 
-
 def main():
 	csv_dir = Path(__file__).parent / "csv"
 	conn_csv = csv_dir / "conn.log.csv"
@@ -62,6 +64,6 @@ def main():
 		out_path=out_dir / "connections_over_time_from_conn_line.png",
 	)
 
-
 if __name__ == "__main__":
 	main()
+
