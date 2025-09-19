@@ -87,26 +87,42 @@ def load_all_csvs(csv_dir: str | os.PathLike) -> pd.DataFrame:
 
 
 def plot_protocol_pie(df: pd.DataFrame, out_path: Path | None = None) -> None:
-	"""Plot protocol share pie by event count, excluding transport protocols."""
+	"""Plot protocol share pie by event count, excluding transport protocols. Only show ldap, dns, rpc, tls, kerberos, other."""
 	# Define transport protocols to exclude (all lowercase)
 	transport_protocols_to_exclude = {'tcp', 'udp', 'unknown_transport', 'icmp', 'arp', 'unknown_protocol', 'unknown_service', 'unknown_log_type'}
 
 	# Filter out transport-layer protocols
 	filtered_df = df[~df["unified_protocol"].isin(transport_protocols_to_exclude)]
 
-	# Group by unified_protocol and count events
-	agg = filtered_df.groupby("unified_protocol", dropna=False)["event_count"].sum().sort_values(ascending=False)
-	label = "Application Protocol share by event count"
+	# Parent categories we want to display (ordered)
+	ORDER = ["ldap", "dns", "rpc", "tls", "kerberos", "other"]
 
-	# Keep top categories and group rest into 'other' if there are many
-	top_n = 8
-	if len(agg) > top_n:
-		top = agg.iloc[:top_n]
-		other = pd.Series({"other": agg.iloc[top_n:].sum()})
-		agg = pd.concat([top, other])
+	# Map many labels/variants to the parent categories
+	def to_parent(label: str) -> str:
+		val = str(label).strip().lower()
+		if val in {"ldap", "ldap_search", "ldaps"}:
+			return "ldap"
+		if val in {"dns"}:
+			return "dns"
+		if val in {"dce_rpc", "msrpc", "netlogon", "lsarpc", "samr", "epmapper", "epmap", "endpoint_mapper", "rpc"}:
+			return "rpc"
+		if val in {"ssl", "tls", "x509", "https"}:
+			return "tls"
+		if val in {"kerberos", "krb_tcp", "krb5"}:
+			return "kerberos"
+		return "other"
+
+	filtered_df = filtered_df.copy()
+	filtered_df["viz_group"] = filtered_df["unified_protocol"].apply(to_parent)
+
+	# Aggregate and reindex to desired order (fill missing with 0)
+	agg = filtered_df.groupby("viz_group", dropna=False)["event_count"].sum()
+	agg = agg.reindex(ORDER, fill_value=0)
+
+	label = "Protocol share (ldap, dns, rpc, tls, kerberos, other)"
 
 	plt.figure(figsize=(8, 8))
-	colors = plt.cm.tab20.colors
+	colors = plt.cm.Set3.colors  # 12 pleasant distinct colors
 	plt.pie(agg.values, labels=agg.index, autopct="%1.1f%%", startangle=90, colors=colors)
 	plt.title(label)
 	plt.tight_layout()

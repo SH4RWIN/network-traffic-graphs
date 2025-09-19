@@ -156,23 +156,4 @@ All generated figures are saved to `outputs/` as `.png` at 150 DPI. You can embe
 ## Extending
 - Add new charts by importing `load_all_csvs` / `load_and_standardize_log` from `pie_chart.py`.
 - Create additional aggregations (e.g., bytes transferred over time) by grouping on `total_bytes`.
-- Consider exporting to Parquet for faster repeated analysis.
-
----
-
-## Contributing
-- Keep code readable and explicit; prefer clear variable names.
-- Follow existing formatting; avoid unrelated refactors in edits.
-- Add minimal, focused docstrings where behavior is non-obvious.
-
----
-
-## License
-Choose a license for your project (e.g., MIT, Apache-2.0) and add it here.
-
----
-
-## FAQ
-- Can I run only with CSVs and no Zeek? Yes—drop your CSVs into `csv/` with the standardized columns or rely on the loaders to infer columns.
-- Do I need the provided `venv/`? No. You can use your own virtual environment or system Python.
-- Can I change where outputs are saved? Yes—both scripts accept paths you can modify in-code; you can generalize to CLI flags if desired. 
+- Consider exporting to Parquet for faster repeated analysis. 
